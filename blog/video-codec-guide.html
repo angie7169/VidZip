@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Codec Guide: H.264, H.265, AV1, VP9 (2026) | VidZip</title>
+    <meta name="description" content="What is a video codec? Full 2026 guide to H.264, H.265 (HEVC), AV1, and VP9 — efficiency, compatibility, licensing, and which codec your videos should use.">
+    <meta name="keywords" content="video codec, video codec guide, h264 h265 av1, what is a video codec, av1 vs hevc, vp9 codec, best video codec">
+    <link rel="canonical" href="https://angie7169.github.io/VidZip/blog/video-codec-guide.html">
+
+    <meta property="og:title" content="Video Codec Guide: H.264, H.265, AV1, VP9">
+    <meta property="og:description" content="The four codecs that matter, what each is for, and which one your videos should use.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://angie7169.github.io/VidZip/blog/video-codec-guide.html">
+    <meta property="og:image" content="https://angie7169.github.io/VidZip/images/og-cover.png">
+    <meta property="article:published_time" content="2026-07-20">
+    <meta property="article:modified_time" content="2026-07-20">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a video codec?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A codec (compressor-decompressor) is the algorithm that encodes video into a file and decodes it back for playback. Common codecs include H.264 (universal compatibility), H.265/HEVC (better efficiency), AV1 (royalty-free future), and VP9 (Google's older royalty-free option). The codec decides how small a file can be at a given quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which video codec is best?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on use case. For maximum compatibility (sharing, email, upload), H.264 is the safe choice — it plays everywhere. For storage efficiency on Apple devices, H.265/HEVC is better but has compatibility issues outside Apple. For future-proofing and web video, AV1 is the direction but adoption is still growing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AV1 better than HEVC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On paper, yes — AV1 is roughly 30% more efficient than HEVC at the same quality, and it's royalty-free. In practice, AV1 encoding is much slower on phones, hardware decoding is only on the newest devices, and adoption is still ramping up. HEVC remains more practical for most uses today, but AV1 is the future."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does H.264 still dominate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Universal compatibility and low licensing cost. H.264 plays on every device, browser, and editing tool made in the last 15 years. Newer codecs are more efficient but have licensing disputes (HEVC) or slow hardware adoption (AV1), so H.264 remains the safe default — especially for shared video where you don't control the playback device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What codec does iPhone use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone shoots video in H.265 (HEVC) by default for storage efficiency, wrapped in a MOV container. With the 'Most Compatible' Camera setting, it falls back to H.264. Apple's ecosystem supports both natively, but HEVC causes compatibility issues when sharing to Windows or non-Apple devices."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Video Codec Guide: H.264, H.265, AV1, VP9",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "author": { "@type": "Organization", "name": "VidZip Team" },
+      "publisher": { "@type": "Organization", "name": "VidZip" }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container article">
+        <a href="index.html" class="back-link">← All Guides</a>
+        <span style="display:inline-block; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:8px; background:rgba(10,132,255,0.15); color:var(--brand); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Reference</span>
+
+        <h1>Video Codec Guide: H.264, H.265, AV1, VP9</h1>
+        <p class="meta">Updated July 2026 · 9 min read · By VidZip Team</p>
+
+        <p style="font-size:1.05rem; color:var(--text);">Every video file has a codec hiding inside it — the algorithm that decided how the picture was squeezed into bits and how it'll be unsqueezed for playback. The codec dictates how small a file can be at a given quality, which devices can play it, and how future-proof it is. This guide covers the four codecs that actually matter in 2026 and tells you which one your videos should use.</p>
+
+        <h2>What Is a Codec, Really?</h2>
+        <p>A codec (short for <strong>co</strong>mpressor-<strong>de</strong>compressor) is a piece of software that encodes raw video into a compressed file and decodes that file back into viewable video. The same codec must exist on both sides: the encoder that wrote the file, and the player that reads it.</p>
+        <p>Codecs are separate from containers (MP4, MOV, MKV). A container is the wrapper that holds video, audio, subtitles, and metadata together; the codec is how the video stream inside was encoded. An MP4 file might contain H.264 video, HEVC video, or even AV1 — the container doesn't tell you which. This is why some MP4 files play everywhere and others don't: same container, different codec.</p>
+        <p>The codec matters because it sets the limit on <strong>quality per bit</strong>. A more efficient codec delivers the same picture at a lower bitrate (smaller file). It also matters for <strong>compatibility</strong> — your video can only play on devices that have a decoder for its codec.</p>
+
+        <h2>The Four Codecs That Matter in 2026</h2>
+        <div class="item" style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.88rem;">
+                <thead>
+                    <tr style="border-bottom:1px solid var(--border);">
+                        <th style="text-align:left; padding:10px;">Codec</th>
+                        <th style="text-align:left; padding:10px;">Released</th>
+                        <th style="text-align:left; padding:10px;">Efficiency</th>
+                        <th style="text-align:left; padding:10px;">Compatibility</th>
+                        <th style="text-align:left; padding:10px;">Licensing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;"><strong>H.264 (AVC)</strong></td><td style="padding:10px;">2003</td><td style="padding:10px;">Baseline</td><td style="padding:10px;"><strong>Universal</strong></td><td style="padding:10px;">Cheap</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;"><strong>H.265 (HEVC)</strong></td><td style="padding:10px;">2013</td><td style="padding:10px;">~40-50% better</td><td style="padding:10px;">Apple, modern Android, partial Windows</td><td style="padding:10px;">Expensive, fragmented</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;"><strong>VP9</strong></td><td style="padding:10px;">2013</td><td style="padding:10px;">~Similar to HEVC</td><td style="padding:10px;">Web (Chrome/YouTube), Android</td><td style="padding:10px;">Royalty-free</td></tr>
+                    <tr><td style="padding:10px;"><strong>AV1</strong></td><td style="padding:10px;">2018</td><td style="padding:10px;">~30% better than HEVC</td><td style="padding:10px;">Growing — newer browsers &amp; hardware</td><td style="padding:10px;">Royalty-free</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cta-box">
+            <h3>📱 The right codec, chosen for you</h3>
+            <p>VidZip always outputs H.264 in MP4 — the universal safe choice. You get small files that play on any device, anywhere. No codec guessing required.</p>
+            <a href="../index.html" class="btn">Download VidZip Free →</a>
+        </div>
+
+        <h2>H.264 (AVC): The Universal Workhorse</h2>
+        <p>H.264 is the codec the world runs on. Released in 2003, it's <strong>universally supported</strong> — every device, browser, editing tool, and streaming platform made in the last 15 years can decode it. If you have no idea what codec to use, H.264 is always the safe answer.</p>
+        <p>Its weakness is age. H.264 is significantly less efficient than HEVC or AV1, meaning files at the same quality are 40-50% larger. For storage-constrained situations (phones, email attachments), this matters. But for sharing and compatibility, H.264 is unmatched.</p>
+        <p><strong>Use it when:</strong> you're sharing video to unknown devices, uploading to platforms, sending by email, or editing in older software. <strong>VidZip outputs H.264 by default for exactly this reason.</strong></p>
+
+        <h2>H.265 (HEVC): The Efficient Apple Favorite</h2>
+        <p>H.265 (also called HEVC) was designed as H.264's successor, delivering roughly 40-50% better efficiency — same quality, about half the file size. iPhone shoots HEVC by default for this reason; the storage savings are enormous.</p>
+        <p>The problem is <strong>licensing and compatibility</strong>. HEVC's patents are owned by multiple pools who couldn't agree on terms, and many software makers (especially browsers like Chrome and Firefox) refused to pay. Result: HEVC plays natively on Apple devices, modern Android, and recent Windows (with a paid extension), but not everywhere. See our <a href="hevc-vs-h264.html">HEVC vs H.264 deep comparison</a> for details.</p>
+        <p><strong>Use it when:</strong> you control playback (your own Apple ecosystem), storage matters more than compatibility, or you're archiving raw footage.</p>
+
+        <h2>VP9: Google's Royalty-Free HEVC Alternative</h2>
+        <p>VP9 is Google's answer to HEVC's licensing mess — a royalty-free codec with roughly HEVC-level efficiency. It's used heavily on YouTube and supported in Chrome, Firefox, and Android, but largely ignored by Apple and the wider video tooling ecosystem.</p>
+        <p>For consumers, VP9 matters mostly as the codec behind a lot of streaming web video. You rarely encounter it as a file format for capturing or sharing. If you see "WebM" video, it's often VP9 inside. <strong>You probably don't need to think about VP9 directly</strong> — it's mainly a backend choice by platforms.</p>
+
+        <h2>AV1: The Royalty-Free Future</h2>
+        <p>AV1 is the next-generation codec from the Alliance for Open Media (Google, Amazon, Netflix, Microsoft, Apple, and others). It's roughly 30% more efficient than HEVC and is <strong>completely royalty-free</strong> — designed specifically to avoid the licensing disasters of HEVC.</p>
+        <p>AV1 is already supported in modern Chrome, Firefox, Edge, newer Android and iOS devices, and streaming services like Netflix and YouTube (gradually). Hardware decoding is shipping in the newest phone and GPU chips. The limitation today is <strong>encoding speed</strong> — AV1 is slow to encode on phones, which is why iPhones still shoot HEVC instead of AV1.</p>
+        <p><strong>Use it when:</strong> you're targeting modern web browsers and want maximum future-proofing. For most consumers in 2026, AV1 is still "the codec coming next," not the one to use for personal video.</p>
+
+        <h2>Which Codec Should You Use?</h2>
+        <p>For most iPhone users, the practical answer is simple:</p>
+        <ul>
+            <li><strong>Keep shooting in HEVC</strong> (iPhone default) for storage efficiency.</li>
+            <li><strong>Convert to H.264 when sharing</strong> outside Apple's ecosystem, using a tool like VidZip. This guarantees playback on any device.</li>
+            <li><strong>Don't worry about AV1 or VP9</strong> for personal video. They matter for web streaming backends, not for files you create.</li>
+        </ul>
+        <p>The reason VidZip outputs H.264 is simple: a smaller file that won't play is useless. H.264's universal compatibility beats the incremental efficiency of newer codecs when you're sharing video. For personal storage on Apple devices, HEVC remains the better choice — which is why iPhone shoots it.</p>
+
+        <h2>The Codec vs Container Confusion</h2>
+        <p>A common confusion: people say "MP4 video" thinking MP4 is a codec. It's not — MP4 is a <em>container</em> that holds video encoded with some codec. Common pairings:</p>
+        <ul>
+            <li><strong>.mp4 with H.264</strong> — universal, plays everywhere. What VidZip outputs.</li>
+            <li><strong>.mp4 with HEVC</strong> — smaller, but limited compatibility.</li>
+            <li><strong>.mov with HEVC</strong> — iPhone's default capture format.</li>
+            <li><strong>.webm with VP9/AV1</strong> — web video, especially from YouTube.</li>
+            <li><strong>.mkv with anything</strong> — flexible container, popular for archival.</li>
+        </ul>
+        <p>The lesson: when someone says "MP4," ask which codec. The container alone doesn't tell you if the file will play.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="item">
+            <h3>What is a video codec?</h3>
+            <p>A codec (compressor-decompressor) is the algorithm that encodes video into a file and decodes it back for playback. Common codecs include H.264 (universal compatibility), H.265/HEVC (better efficiency), AV1 (royalty-free future), and VP9 (Google's older royalty-free option). The codec decides how small a file can be at a given quality.</p>
+        </div>
+
+        <div class="item">
+            <h3>Which video codec is best?</h3>
+            <p>It depends on use case. For maximum compatibility (sharing, email, upload), H.264 is the safe choice — it plays everywhere. For storage efficiency on Apple devices, H.265/HEVC is better but has compatibility issues outside Apple. For future-proofing and web video, AV1 is the direction but adoption is still growing.</p>
+        </div>
+
+        <div class="item">
+            <h3>Is AV1 better than HEVC?</h3>
+            <p>On paper, yes — AV1 is roughly 30% more efficient than HEVC at the same quality, and it's royalty-free. In practice, AV1 encoding is much slower on phones, hardware decoding is only on the newest devices, and adoption is still ramping up. HEVC remains more practical for most uses today, but AV1 is the future.</p>
+        </div>
+
+        <div class="item">
+            <h3>Why does H.264 still dominate?</h3>
+            <p>Universal compatibility and low licensing cost. H.264 plays on every device, browser, and editing tool made in the last 15 years. Newer codecs are more efficient but have licensing disputes (HEVC) or slow hardware adoption (AV1), so H.264 remains the safe default — especially for shared video where you don't control the playback device.</p>
+        </div>
+
+        <div class="item">
+            <h3>What codec does iPhone use?</h3>
+            <p>iPhone shoots video in H.265 (HEVC) by default for storage efficiency, wrapped in a MOV container. With the 'Most Compatible' Camera setting, it falls back to H.264. Apple's ecosystem supports both natively, but HEVC causes compatibility issues when sharing to Windows or non-Apple devices.</p>
+        </div>
+
+        <div class="cta-box">
+            <h3>📱 H.264 output, no codec headaches</h3>
+            <p>VidZip outputs universal H.264 MP4 — plays on any device, any browser. Just pick a preset and tap Compress.</p>
+            <a href="../index.html" class="btn">Get VidZip →</a>
+        </div>
+
+        <h2>Related Guides</h2>
+        <div class="item"><a href="hevc-vs-h264.html"><h3>HEVC vs H.264: Which Is Better? →</h3></a></div>
+        <div class="item"><a href="how-video-compression-works.html"><h3>How Video Compression Actually Works →</h3></a></div>
+        <div class="item"><a href="video-bitrate-explained.html"><h3>Video Bitrate Explained →</h3></a></div>
+        <div class="item"><a href="mov-vs-mp4.html"><h3>MOV vs MP4: Which Format for iPhone? →</h3></a></div>
+    </div>
+
+    <footer>
+        <p>© 2026 JNPRD · <a href="../index.html">Home</a> · <a href="../support.html">Support</a> · <a href="../privacy.html">Privacy</a> · <a href="../eula.html">Terms</a> · <a href="index.html">Blog</a></p>
+    </footer>
+</body>
+</html>
