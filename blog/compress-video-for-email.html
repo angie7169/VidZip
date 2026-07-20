@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Compress a Video for Email (Under 25 MB) | VidZip</title>
+    <meta name="description" content="Step-by-step: how to compress a video for email under Gmail and Outlook's 25 MB limit on iPhone. Bitrate math explained, plus the fastest one-tap method.">
+    <meta name="keywords" content="compress video for email, video too large for email, send video by email, email video size limit, compress video 25mb, email video attachment">
+    <link rel="canonical" href="https://angie7169.github.io/VidZip/blog/compress-video-for-email.html">
+
+    <meta property="og:title" content="How to Compress a Video for Email (Under 25 MB)">
+    <meta property="og:description" content="Gmail and Outlook cap attachments at 25 MB. Here's how to hit it every time on iPhone.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://angie7169.github.io/VidZip/blog/compress-video-for-email.html">
+    <meta property="og:image" content="https://angie7169.github.io/VidZip/images/og-cover.png">
+    <meta property="article:published_time" content="2026-07-20">
+    <meta property="article:modified_time" content="2026-07-20">
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Compress a Video for Email Under 25 MB",
+      "description": "Compress an iPhone video so it fits under the 25 MB email attachment limit for Gmail, Outlook, and iCloud Mail.",
+      "totalTime": "PT2M",
+      "supply": [
+        { "@type": "HowToSupply", "name": "VidZip app (free)" },
+        { "@type": "HowToSupply", "name": "The video you want to email" }
+      ],
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Open VidZip and pick your video", "text": "Launch VidZip and tap Photos or Files, then select the video you want to send by email." },
+        { "@type": "HowToStep", "position": 2, "name": "Switch to Target Size mode", "text": "On the Compress screen, tap the Target Size tab." },
+        { "@type": "HowToStep", "position": 3, "name": "Enter 25 MB", "text": "Type 25 in the MB field. VidZip shows an estimated quality rating so you know what to expect." },
+        { "@type": "HowToStep", "position": 4, "name": "Compress and save", "text": "Tap Compress. When done, tap Save to Photos or Save to Files." },
+        { "@type": "HowToStep", "position": 5, "name": "Attach to your email", "text": "Open your email app, compose a new message, and attach the compressed video from Photos or Files. It will send without hitting the limit." }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the email attachment size limit for video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gmail and Outlook both cap attachments at 25 MB. iCloud Mail is around 20 MB. Yahoo Mail allows up to 25 MB. To send a video by email, it must be under your provider's limit — most iPhone videos need to be compressed first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I compress a video to 25 MB for email?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use VidZip's Target Size mode: enter 25 MB and tap Compress. The app calculates the bitrate needed to hit exactly that size based on the video's duration. The result fits under Gmail and Outlook's attachment limit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my video is still too large after compressing to 25 MB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If 25 MB still doesn't fit (rare, but possible with very long videos), try 20 MB or lower. Alternatively, upload the video to Google Drive or iCloud and share a link in the email — that bypasses the attachment limit entirely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long of a video fits in 25 MB?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roughly 3-5 minutes at phone-viewing quality (about 0.7-1.1 Mbps). Shorter if the footage has lots of motion. For typical 30-second to 2-minute clips, 25 MB is plenty and quality stays high."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Gmail automatically compress video attachments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Gmail does not compress video attachments. If a video exceeds 25 MB, Gmail will refuse to attach it and instead prompt you to upload it to Google Drive and insert a Drive link. To send an actual attachment, you must compress the video yourself first."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container article">
+        <a href="index.html" class="back-link">← All Guides</a>
+        <span style="display:inline-block; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:8px; background:rgba(10,132,255,0.15); color:var(--brand); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Tutorial</span>
+
+        <h1>How to Compress a Video for Email (Under 25 MB)</h1>
+        <p class="meta">Updated July 2026 · 7 min read · By VidZip Team</p>
+
+        <p style="font-size:1.05rem; color:var(--text);">Email is still the hardest place to send a video. Gmail, Outlook, and iCloud Mail all cap attachments at roughly 25 MB — and almost any iPhone clip from the last few years sails past that in seconds. This guide shows exactly how to compress a video to fit under the email limit, with the bitrate math explained and the fastest one-tap method on iPhone.</p>
+
+        <h2>The 25 MB Email Limit, Explained</h2>
+        <p>Why 25 MB specifically? Email is an old protocol, and attachments get encoded into text (base64) for transit, which inflates their size by about 33%. To keep messages deliverable, most providers cap the <em>encoded</em> size — which works out to around 25 MB for the original file.</p>
+        <ul>
+            <li><strong>Gmail:</strong> 25 MB attachment limit</li>
+            <li><strong>Outlook / Hotmail:</strong> 25 MB</li>
+            <li><strong>iCloud Mail:</strong> ~20 MB</li>
+            <li><strong>Yahoo Mail:</strong> 25 MB</li>
+        </ul>
+        <p>Go over and your email client will refuse to send, silently drop the attachment, or pester you to upload to a cloud drive instead. To send an actual attachment, the file has to fit — and that means compressing.</p>
+
+        <h2>How Long a Video Fits in 25 MB?</h2>
+        <p>The math is simple: <strong>file size ≈ bitrate × duration</strong>. For a 25 MB target:</p>
+        <div class="item" style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.88rem;">
+                <thead>
+                    <tr style="border-bottom:1px solid var(--border);">
+                        <th style="text-align:left; padding:10px;">Video Duration</th>
+                        <th style="text-align:left; padding:10px;">Bitrate to fit 25 MB</th>
+                        <th style="text-align:left; padding:10px;">Likely Quality</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">30 seconds</td><td style="padding:10px;">~6.7 Mbps</td><td style="padding:10px;">Excellent (near original)</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">1 minute</td><td style="padding:10px;">~3.3 Mbps</td><td style="padding:10px;">Very good</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">3 minutes</td><td style="padding:10px;">~1.1 Mbps</td><td style="padding:10px;">Good on phone screen</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">5 minutes</td><td style="padding:10px;">~0.7 Mbps</td><td style="padding:10px;">Acceptable, soft on motion</td></tr>
+                    <tr><td style="padding:10px;">10 minutes</td><td style="padding:10px;">~0.33 Mbps</td><td style="padding:10px;">Noticeably degraded</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>For typical clips under 2 minutes, 25 MB is plenty and quality stays high. For anything over 5 minutes, you'll see clear quality loss at this size — better to send a cloud link instead.</p>
+
+        <div class="cta-box">
+            <h3>📱 Skip the bitrate math</h3>
+            <p>VidZip's Target Size mode does the calculation for you. Type "25 MB," tap Compress, and the file fits under the email limit every time.</p>
+            <a href="../index.html" class="btn">Download VidZip Free →</a>
+        </div>
+
+        <h2>Step-by-Step: Compress for Email with VidZip</h2>
+        <ol>
+            <li><strong>Open VidZip</strong> and tap <strong>Photos</strong> or <strong>Files</strong>.</li>
+            <li><strong>Select the video</strong> you want to email.</li>
+            <li>On the Compress screen, tap the <strong>Target Size</strong> tab.</li>
+            <li><strong>Enter 25</strong> in the MB field. VidZip shows an estimated quality rating (stars + percent smaller) so you know what to expect.</li>
+            <li>Tap <strong>Compress</strong> in the top right. Progress shows per video.</li>
+            <li>When done, tap <strong>Save to Photos</strong> or <strong>Save to Files</strong>.</li>
+            <li>Open your email app (Mail, Gmail, Outlook), compose a new message, and attach the compressed video. It will send without hitting the limit.</li>
+        </ol>
+        <p>The original stays untouched — VidZip writes a new, smaller copy. Target Size mode is a Pro feature ($9.99 one-time); free users can still hit 25 MB using the Space Saver preset and checking the resulting size.</p>
+
+        <h2>When Email Just Won't Work</h2>
+        <p>If your video is too long for 25 MB to look acceptable (say, 10+ minutes of footage), email isn't the right tool. Options:</p>
+        <ul>
+            <li><strong>Google Drive link in Gmail.</strong> Gmail will prompt this automatically when a file exceeds 25 MB — the recipient clicks and streams/downloads.</li>
+            <li><strong>iCloud link.</strong> In Photos, share → Options → "iCloud Link." Recipient opens in a browser.</li>
+            <li><strong>WeTransfer.</strong> Free for up to 2 GB, sends a download link by email.</li>
+            <li><strong>AirDrop</strong> if both devices are nearby — no size limit, no email needed.</li>
+        </ul>
+        <p>But for typical short clips — a kid's birthday moment, a quick demo, a 30-second scene — compression to 25 MB works perfectly and is much less friction than a cloud link.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="item">
+            <h3>What is the email attachment size limit for video?</h3>
+            <p>Gmail and Outlook both cap attachments at 25 MB. iCloud Mail is around 20 MB. Yahoo Mail allows up to 25 MB. To send a video by email, it must be under your provider's limit — most iPhone videos need to be compressed first.</p>
+        </div>
+
+        <div class="item">
+            <h3>How do I compress a video to 25 MB for email?</h3>
+            <p>Use VidZip's Target Size mode: enter 25 MB and tap Compress. The app calculates the bitrate needed to hit exactly that size based on the video's duration. The result fits under Gmail and Outlook's attachment limit.</p>
+        </div>
+
+        <div class="item">
+            <h3>What if my video is still too large after compressing to 25 MB?</h3>
+            <p>If 25 MB still doesn't fit (rare, but possible with very long videos), try 20 MB or lower. Alternatively, upload the video to Google Drive or iCloud and share a link in the email — that bypasses the attachment limit entirely.</p>
+        </div>
+
+        <div class="item">
+            <h3>How long of a video fits in 25 MB?</h3>
+            <p>Roughly 3-5 minutes at phone-viewing quality (about 0.7-1.1 Mbps). Shorter if the footage has lots of motion. For typical 30-second to 2-minute clips, 25 MB is plenty and quality stays high.</p>
+        </div>
+
+        <div class="item">
+            <h3>Does Gmail automatically compress video attachments?</h3>
+            <p>No. Gmail does not compress video attachments. If a video exceeds 25 MB, Gmail will refuse to attach it and instead prompt you to upload it to Google Drive and insert a Drive link. To send an actual attachment, you must compress the video yourself first.</p>
+        </div>
+
+        <div class="cta-box">
+            <h3>📱 Email any video, hassle-free</h3>
+            <p>Target size mode · No watermark · 100% on-device. Free to try, $9.99 once to own forever.</p>
+            <a href="../index.html" class="btn">Get VidZip →</a>
+        </div>
+
+        <h2>Related Guides</h2>
+        <div class="item"><a href="video-too-large-to-send.html"><h3>Video Too Large to Send? Here's the Fix →</h3></a></div>
+        <div class="item"><a href="compress-video-target-size.html"><h3>Compress Video to an Exact File Size →</h3></a></div>
+        <div class="item"><a href="reduce-video-size.html"><h3>How to Reduce Video File Size →</h3></a></div>
+        <div class="item"><a href="compress-video-iphone.html"><h3>How to Compress a Video on iPhone →</h3></a></div>
+    </div>
+
+    <footer>
+        <p>© 2026 JNPRD · <a href="../index.html">Home</a> · <a href="../support.html">Support</a> · <a href="../privacy.html">Privacy</a> · <a href="../eula.html">Terms</a> · <a href="index.html">Blog</a></p>
+    </footer>
+</body>
+</html>
