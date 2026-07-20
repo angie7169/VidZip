@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Bitrate Explained: The Number That Decides Size and Quality | VidZip</title>
+    <meta name="description" content="What is video bitrate? The complete guide to Mbps, how bitrate decides file size and quality, and what bitrate to use for 720p, 1080p, and 4K.">
+    <meta name="keywords" content="video bitrate, what is video bitrate, video bitrate explained, mbps video, bitrate for 1080p, bitrate for 4k, video bitrate chart">
+    <link rel="canonical" href="https://angie7169.github.io/VidZip/blog/video-bitrate-explained.html">
+
+    <meta property="og:title" content="Video Bitrate Explained">
+    <meta property="og:description" content="The single number that decides video file size and quality. Here's how to pick the right bitrate.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://angie7169.github.io/VidZip/blog/video-bitrate-explained.html">
+    <meta property="og:image" content="https://angie7169.github.io/VidZip/images/og-cover.png">
+    <meta property="article:published_time" content="2026-07-20">
+    <meta property="article:modified_time" content="2026-07-20">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is video bitrate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bitrate is the amount of data used per second of video, measured in bits per second (bps, Kbps, or Mbps). Higher bitrate means more data, which usually means better quality and bigger file size. A 10 Mbps video uses about 10 megabits (1.25 MB) of data every second."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What bitrate should I use for 1080p video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For 1080p video meant to look good on phones and laptops, 4-8 Mbps is usually plenty with H.264 encoding. HEVC can match the same quality at 2-4 Mbps. YouTube recommends 8-12 Mbps for 1080p at 30 fps. iPhone footage often ships at 12-20 Mbps, leaving lots of room to cut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does higher bitrate mean better quality?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Up to a point, yes. But there's a ceiling: once the bitrate is high enough to encode all visible detail without artifacts, adding more just bloats the file. Most consumer video (especially iPhone footage) is encoded well above that ceiling, which is why compressing 60-80% rarely shows visible quality loss."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is video bitrate calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "File size (in bits) ÷ duration (in seconds) = average bitrate. For example, a 100 MB video that runs 60 seconds = 800 megabits ÷ 60 = ~13.3 Mbps. To hit a target size, reverse it: target bits ÷ duration = required bitrate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What bitrate should I use for 4K video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For everyday 4K footage viewed on phones and laptops, 15-25 Mbps is plenty with H.264, or 8-15 Mbps with HEVC. iPhone 4K HDR footage often ships at 30-50 Mbps — well above what the eye needs at phone viewing distances."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Video Bitrate Explained: The Number That Decides Size and Quality",
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "author": { "@type": "Organization", "name": "VidZip Team" },
+      "publisher": { "@type": "Organization", "name": "VidZip" }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container article">
+        <a href="index.html" class="back-link">← All Guides</a>
+        <span style="display:inline-block; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:8px; background:rgba(10,132,255,0.15); color:var(--brand); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px;">Reference</span>
+
+        <h1>Video Bitrate Explained</h1>
+        <p class="meta">Updated July 2026 · 9 min read · By VidZip Team</p>
+
+        <p style="font-size:1.05rem; color:var(--text);">If you only learn one technical concept about video, make it bitrate. Bitrate is the single number that decides both file size and quality — and once you understand it, everything about video compression clicks into place. This guide explains what bitrate is, how to calculate it, what numbers to aim for at each resolution, and why your iPhone videos are bigger than they need to be.</p>
+
+        <h2>What Is Bitrate?</h2>
+        <p><strong>Bitrate is the amount of data used per second of video.</strong> It's measured in bits per second: bps (bits), Kbps (kilobits, thousands), or Mbps (megabits, millions). A video at 10 Mbps uses about 10 megabits — roughly 1.25 megabytes — of storage every second.</p>
+        <p>Higher bitrate means more data, which usually means more detail and fewer compression artifacts. But it also means bigger files. The art of video compression is finding the lowest bitrate that still looks good to the eye.</p>
+        <p>Note the unit gotcha: bitrate uses <strong>bits</strong> (lowercase b), file sizes use <strong>bytes</strong> (uppercase B). There are 8 bits in a byte, so 8 Mbps = 1 MB per second. Getting this wrong is the most common source of confusion in video size math.</p>
+
+        <h2>The File Size Formula</h2>
+        <p>A video's file size is essentially <strong>bitrate × duration</strong>:</p>
+        <div class="item" style="background:var(--surface2); border-color:var(--brand);">
+            <p style="margin:0; font-family:ui-monospace,monospace; color:var(--text); font-size:0.95rem;">file size (bits) = bitrate (bps) × duration (seconds)</p>
+            <p style="margin:8px 0 0; color:var(--text2); font-size:0.88rem;">→ divide by 8 for bytes, by 8,000,000 for MB</p>
+        </div>
+        <p>Worked example: a 5 Mbps video that runs 2 minutes (120 seconds):</p>
+        <ul>
+            <li>5,000,000 bps × 120 s = 600,000,000 bits = 600 Mb</li>
+            <li>600 Mb ÷ 8 = 75 MB</li>
+        </ul>
+        <p>So a 2-minute clip at 5 Mbps is about 75 MB. Reverse the formula to hit a target: want a 25 MB video for email that runs 60 seconds? You need (25 MB × 8) ÷ 60 = ~3.3 Mbps.</p>
+
+        <div class="cta-box">
+            <h3>📱 Skip the bitrate math</h3>
+            <p>VidZip's Target Size mode does this calculation for you. Enter "25 MB" and the app picks the exact bitrate to hit it based on your video's duration.</p>
+            <a href="../index.html" class="btn">Download VidZip Free →</a>
+        </div>
+
+        <h2>Recommended Bitrates by Resolution</h2>
+        <p>These are practical targets for H.264-encoded video meant to look good on phone and laptop screens. HEVC can match these at roughly 40-50% lower bitrate.</p>
+        <div class="item" style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.88rem;">
+                <thead>
+                    <tr style="border-bottom:1px solid var(--border);">
+                        <th style="text-align:left; padding:10px;">Resolution</th>
+                        <th style="text-align:left; padding:10px;">H.264 (Mbps)</th>
+                        <th style="text-align:left; padding:10px;">HEVC (Mbps)</th>
+                        <th style="text-align:left; padding:10px;">Per minute (H.264)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">720p</td><td style="padding:10px;">2.5-5</td><td style="padding:10px;">1.5-3</td><td style="padding:10px;">~19-37 MB</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">1080p</td><td style="padding:10px;">5-8</td><td style="padding:10px;">3-5</td><td style="padding:10px;">~37-60 MB</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:10px;">1440p</td><td style="padding:10px;">10-16</td><td style="padding:10px;">6-10</td><td style="padding:10px;">~75-120 MB</td></tr>
+                    <tr><td style="padding:10px;">4K</td><td style="padding:10px;">20-35</td><td style="padding:10px;">12-20</td><td style="padding:10px;">~150-260 MB</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>These ranges assume 30 fps. For 60 fps, multiply by roughly 1.5. For HDR, add about 25%. Notice how iPhone footage (often 30-50 Mbps for 4K HDR) sits well above these practical targets — that's the headroom compression exploits.</p>
+
+        <h2>Constant vs Variable Bitrate (CBR vs VBR)</h2>
+        <p>Bitrate can be applied two ways:</p>
+        <ul>
+            <li><strong>Constant Bitrate (CBR)</strong> — same number of bits every second, regardless of what's on screen. Predictable file size, but wastes bits on static scenes and starves complex ones. Used for live streaming.</li>
+            <li><strong>Variable Bitrate (VBR)</strong> — bitrate rises during complex motion, drops during static scenes. Smaller files at the same quality. Used for stored files, including iPhone footage and VidZip output.</li>
+        </ul>
+        <p>VidZip uses VBR-style encoding (the encoder averages to a target bitrate but allocates more bits where the picture needs them). This is why a 5 Mbps average can look better than you'd expect — the bits go where they matter.</p>
+
+        <h2>Bitrate vs Resolution: Which Matters More?</h2>
+        <p>People obsess over resolution (4K sounds impressive), but bitrate is the more honest quality indicator. A 4K video starved of bitrate looks blocky and soft. A 1080p video with generous bitrate looks crisp and clean. This is why streaming services often cap resolution based on connection speed — they're really managing bitrate.</p>
+        <p>For practical compression: <strong>lower bitrate first, keep resolution</strong>. Most videos, especially iPhone footage, have bitrate to spare. Cutting it 60-80% keeps the picture sharp while shrinking the file dramatically. Dropping resolution to 720p is a brute-force move that throws away detail you didn't need to lose.</p>
+
+        <h2>How VidZip Uses Bitrate</h2>
+        <p>VidZip's presets are essentially bitrate recommendations:</p>
+        <ul>
+            <li><strong>High Quality</strong> — keeps 60% of the original bitrate. ~50% smaller, near-lossless.</li>
+            <li><strong>Balanced</strong> — keeps 35% of the original bitrate. ~70% smaller, indistinguishable on phone screens.</li>
+            <li><strong>Space Saver</strong> — keeps 18% of the original bitrate. ~85% smaller, mild artifacts on close inspection.</li>
+            <li><strong>Target Size</strong> — you enter a target MB, VidZip calculates the exact bitrate to hit it.</li>
+        </ul>
+        <p>Every preset preserves the original resolution — only the bitrate changes. That's why VidZip shrinks files without making them look soft.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="item">
+            <h3>What is video bitrate?</h3>
+            <p>Bitrate is the amount of data used per second of video, measured in bits per second (bps, Kbps, or Mbps). Higher bitrate means more data, which usually means better quality and bigger file size. A 10 Mbps video uses about 10 megabits (1.25 MB) of data every second.</p>
+        </div>
+
+        <div class="item">
+            <h3>What bitrate should I use for 1080p video?</h3>
+            <p>For 1080p video meant to look good on phones and laptops, 4-8 Mbps is usually plenty with H.264 encoding. HEVC can match the same quality at 2-4 Mbps. YouTube recommends 8-12 Mbps for 1080p at 30 fps. iPhone footage often ships at 12-20 Mbps, leaving lots of room to cut.</p>
+        </div>
+
+        <div class="item">
+            <h3>Does higher bitrate mean better quality?</h3>
+            <p>Up to a point, yes. But there's a ceiling: once the bitrate is high enough to encode all visible detail without artifacts, adding more just bloats the file. Most consumer video (especially iPhone footage) is encoded well above that ceiling, which is why compressing 60-80% rarely shows visible quality loss.</p>
+        </div>
+
+        <div class="item">
+            <h3>How is video bitrate calculated?</h3>
+            <p>File size (in bits) ÷ duration (in seconds) = average bitrate. For example, a 100 MB video that runs 60 seconds = 800 megabits ÷ 60 = ~13.3 Mbps. To hit a target size, reverse it: target bits ÷ duration = required bitrate.</p>
+        </div>
+
+        <div class="item">
+            <h3>What bitrate should I use for 4K video?</h3>
+            <p>For everyday 4K footage viewed on phones and laptops, 15-25 Mbps is plenty with H.264, or 8-15 Mbps with HEVC. iPhone 4K HDR footage often ships at 30-50 Mbps — well above what the eye needs at phone viewing distances.</p>
+        </div>
+
+        <div class="cta-box">
+            <h3>📱 Compress with the right bitrate, automatically</h3>
+            <p>VidZip's presets handle bitrate for you — pick Balanced for the sweet spot, or Target Size to hit an exact file. No math required.</p>
+            <a href="../index.html" class="btn">Get VidZip →</a>
+        </div>
+
+        <h2>Related Guides</h2>
+        <div class="item"><a href="reduce-video-size.html"><h3>How to Reduce Video File Size →</h3></a></div>
+        <div class="item"><a href="video-resolution-guide.html"><h3>Video Resolution, Framerate & Bitrate →</h3></a></div>
+        <div class="item"><a href="hevc-vs-h264.html"><h3>HEVC vs H.264: Which Is Better? →</h3></a></div>
+        <div class="item"><a href="compress-video-target-size.html"><h3>Compress Video to an Exact File Size →</h3></a></div>
+    </div>
+
+    <footer>
+        <p>© 2026 JNPRD · <a href="../index.html">Home</a> · <a href="../support.html">Support</a> · <a href="../privacy.html">Privacy</a> · <a href="../eula.html">Terms</a> · <a href="index.html">Blog</a></p>
+    </footer>
+</body>
+</html>
