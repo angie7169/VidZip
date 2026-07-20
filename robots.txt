@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angie7169.github.io/VidZip/sitemap.xml
